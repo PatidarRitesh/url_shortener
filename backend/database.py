@@ -5,7 +5,6 @@ from datetime import datetime, timedelta
 CSV_FILE = "url_mapping.csv"
 EXPIRY_DAYS = 7
 
-# ✅ Ensure CSV file exists
 if not os.path.exists(CSV_FILE):
     with open(CSV_FILE, mode='w', newline="") as file:
         writer = csv.writer(file)

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +11,23 @@
 
     <div class="container">
         <h2>🔗 URL Shortener</h2>
-        
-        <input type="text" id="longUrl" placeholder="Enter a long URL here..." />
+
+        <input type="text" id="longUrl" placeholder="Enter a long URL..." />
         <button id="shortenBtn">Shorten URL</button>
 
         <div id="loader" class="hidden">⏳ Shortening URL...</div>
-
         <div id="shortUrl"></div>
         <div id="error"></div>
+    </div>
+
+    <div class="container">
+        <h3>📊 Short URL Statistics</h3>
+        <input type="text" id="shortUrlInput" placeholder="Enter full short URL (e.g., http://127.0.0.1:8000/06995e)" />
+        <button id="statsBtn">Get Stats</button>
+
+        <div id="statsLoader" class="hidden">⏳ Fetching Stats...</div>
+        <div id="stats"></div>
+        <div id="statsError"></div>
     </div>
 
     <script src="script.js"></script>
