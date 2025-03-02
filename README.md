@@ -127,7 +127,7 @@ pip install -r requirements.txt
 
 ### 3️⃣ Run Backend Server
 ```sh
-uvicorn main:app --reload
+uvicorn app:app --reload 
 ```
 ✅ FastAPI will run at: **`http://127.0.0.1:8000`**
 
